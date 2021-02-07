@@ -10,7 +10,7 @@ const searchMeal = search => {
         .then(data => {
             displayMeal(data.meals);
         })
-        .catch(error => alert("Don't get this meal"))
+        .catch(error => alert("Can't understand what you want,please try again."))
 }
 const displayMeal = meals => {
     const mealData = document.getElementById("meal");
@@ -39,15 +39,15 @@ const renderMealInfo = meal => {
     mealDetail.innerHTML =
         `<img src="${meal.strMealThumb}">
         <ul>
-        <li>${meal.strIngredient1}</li>
-        <li>${meal.strIngredient2}</li>
-        <li>${meal.strIngredient3}</li>
-        <li>${meal.strIngredient4}</li>
-        <li>${meal.strIngredient5}</li>
-        <li>${meal.strIngredient6}</li>
-        <li>${meal.strIngredient7}</li>
-        <li>${meal.strIngredient8}</li>
-        <li>${meal.strIngredient9}</li>
-        <li>${meal.strIngredient10}</li>
+        <li>${meal.strMeasure1}${meal.strIngredient1}</li>
+        <li>${meal.strMeasure2}${meal.strIngredient2}</li>
+        <li>${meal.strMeasure3}${meal.strIngredient3}</li>
+        <li>${meal.strMeasure4}${meal.strIngredient4}</li>
+        <li>${meal.strMeasure5}${meal.strIngredient5}</li>
+        <li>${meal.strMeasure6}${meal.strIngredient6}</li>
+        <li>${meal.strMeasure7}${meal.strIngredient7}</li>
+        <li>${meal.strMeasure8}${meal.strIngredient8}</li>
+        <li>${meal.strMeasure9}${meal.strIngredient9}</li>
+        <li>${meal.strMeasure10}${meal.strIngredient10}</li>
       </ul>`;
 }
