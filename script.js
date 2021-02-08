@@ -38,7 +38,8 @@ const renderMealInfo = meal => {
     mealDetail.style.display = "block";
     mealDetail.innerHTML =
         `<img src="${meal.strMealThumb}">
-        <ul id = "ul">
+        <h3>Ingredients</h3>
+        <ul id="ul">
        
         </ul>`;
     for (let i = 1; i < 20; i++) {
